@@ -1,1 +1,65 @@
+# ------------------------------------------
+# PYTHON + MACHINE LEARNING PROJECT GITIGNORE
+# ------------------------------------------
+
+# ========== PYTHON ==========
+
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.egg-info/
+*.log
+
+# Virtual environments
+venv/
+.env/
+.env.bak/
+.venv/
+
+# IDE settings
+.vscode/
+.idea/
+
+# ========== JUPYTER NOTEBOOK ==========
+.ipynb_checkpoints/
+*.nbconvert/
+
+# ========== DATA FILES ==========
+# All big datasets stay ignored
+data/
 *.csv
+*.tsv
+*.xlsx
+*.xls
+*.parquet
+*.feather
+*.jsonl
+
+# ========== MODEL FILES ==========
+# Trained model files can be huge
+*.h5
+*.hdf5
+*.pkl
+*.pickle
+*.joblib
+*.pt
+*.pth
+*.onnx
+
+# ========== CACHE & TEMP FILES ==========
+temp/
+tmp/
+cache/
+__cache__/
+
+# ========== SYSTEM FILES ==========
+.DS_Store
+Thumbs.db
+
+# ========== ENV FILES ==========
+*.env
+.envrc
+
+# ========== DOCKER ==========
+docker-data/
