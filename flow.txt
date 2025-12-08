@@ -1,0 +1,17 @@
+This is a very basic flow of work done so far 
+
+    A[Raw Sales Data] --> B{Clean Data: Remove Future Sales, Check Quality};
+    B --> C{Analyze Product Contribution};
+    C --> D[Focus Dataset: Top 10 Products];
+    D --> E[Aggregate to Daily/Product Level];
+    E[Daily Top 10 Sales Data] --> F{Outlier Capping (IQR) & Scaling};
+    F --> G{Time-Series Feature Creation};
+    G --> H{Time-Based Features: Day/Week/Quarter};
+    H --> I[Lag Features (1, 7, 364 Days)];
+    I --> J[Rolling Averages (7, 30 Days)];
+    J --> K[Final Dataset];
+    K --> L[Split Data: Train, Validation, Test];
+    L --> M{Train: Simple Linear Regression (SLR)};
+    M --> N{Result: SLR Baseline (18.82% MAPE)};
+    N --> O{Train: XGBoost Regressor};
+    O --> P{Result: XGBoost Performance (18.33% MAPE)};
