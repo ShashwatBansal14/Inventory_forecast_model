@@ -22,6 +22,6 @@ while True:
     except ValueError:
         print("Invalid date format! Use YYYY-MM-DD.")
 
-#  Predict
+# Predict
 predicted_qty = predict_quantity(product_id, target_date)
 print(f"\nPredicted quantity for Product {product_id} on {target_date}: {predicted_qty}")
